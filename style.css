@@ -178,6 +178,142 @@ article section ul.tags li:hover{
   color: #ddf;
 }
 
+/* アカウント部分 */
+article section.account{
+  overflow: hidden;
+  /* この要素が終わったら flow を解除する */
+}
+
+article section.account{
+  overflow: hidden;
+  /* position: relative; */
+}
+
+/* トッページのアカウント一覧のところ */
+article section.account .outer{
+  float: left;
+  width: 120;
+  height: 120;
+  margin: 3px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  overflow: hidden;
+
+  /* 背景画像は大きさにあわせて中央に表示 */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+article section.account .inner{
+  width: 120;
+  height: 120;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
+
+  padding-top: 20px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-bottom: 3px;
+}
+article section.account .inner:hover{
+  padding-top: 3px;
+}
+
+article section.account span.desc{
+  font-size: 0.8em;
+}
+
+/* ブロマガ */
+article section.account a.blomaga .outer{
+  background-image: url(snsimg/blomaga.png);
+  background-color: rgb(238, 238, 238);
+}
+article section.account a.blomaga .inner{
+  background-color: rgb(0, 0, 0, 0.0);
+  color: rgba(238, 238, 238, 0.0);
+}
+article section.account a.blomaga .inner:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(238, 238, 238, 1.0);
+}
+
+/* twitter */
+article section.account a.twitter .outer{
+  background-image: url(snsimg/twitter.png);
+  background-color: rgb(85, 172, 238);
+}
+article section.account a.twitter .inner{
+  background-color: rgb(0, 0, 0, 0.0);
+  color: rgba(238, 238, 255, 0.0);
+}
+article section.account a.twitter .inner:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(238, 238, 255, 1.0);
+}
+
+/* facebook */
+article section.account a.facebook .outer{
+  background-image: url(snsimg/facebook.png);
+  /* background-size: auto; */
+  /* background-color: rgb(238, 238, 238); */
+  background-color: rgb(59, 89, 152); /* facebook color */
+}
+article section.account a.facebook .inner{
+  background-color: rgb(0, 0, 0, 0.0);
+  color: rgba(238, 238, 255, 0.0);
+}
+article section.account a.facebook .inner:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(238, 238, 255, 1.0);
+}
+
+/* tumblr */
+article section.account a.tumblr .outer{
+  background-image: url(snsimg/tumblr.png);
+  background-color: rgb(238, 238, 238);
+}
+article section.account a.tumblr .inner{
+  background-color: rgb(0, 0, 0, 0.0);
+  color: rgba(238, 238, 238, 0.0);
+}
+article section.account a.tumblr .inner:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(238, 238, 238, 1.0);
+}
+
+/* qiita */
+article section.account a.qiita .outer{
+  background-image: url(snsimg/qiita.png);
+  background-color: rgb(76,177,13);
+}
+article section.account a.qiita .inner{
+  background-color: rgb(0, 0, 0, 0.0);
+  color: rgba(238, 238, 238, 0.0);
+}
+article section.account a.qiita .inner:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(238, 238, 238, 1.0);
+}
+
+/* GitHub */
+article section.account a.github .outer{
+  background-image: url(snsimg/github.png);
+  background-color: rgb(8,8,8);
+}
+article section.account a.github .inner{
+  background-color: rgb(0, 0, 0, 0.0);
+  color: rgba(238, 238, 238, 0.0);
+}
+article section.account a.github .inner:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(238, 238, 238, 1.0);
+}
+
 article section a{
   text-decoration: none;
 }
