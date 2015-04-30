@@ -14,6 +14,9 @@ body {
   src: local("美咲ゴシック"), url("misaki_gothic.ttf");
 }
 
+
+
+
 /* ヘッダー */
 header {
   background-color: #000;
@@ -31,11 +34,12 @@ header hgroup h1{
   font-family: 'VT323';
   text-align: right;
   float: right;
-  animation: logoanime 0.6s;
+  animation: logoanime 2.0s;
   animation-timing-function: linear;
 }
 @keyframes logoanime{
   0% { opacity: 0; }
+  50% { opacity: 0; }
   100%{ opacity: 1; }
 }
 
@@ -46,7 +50,6 @@ header h2{
   text-align: right;
   font-size: 0.8em;
 }
-
 
 header img.top{
   width: 90%;
@@ -67,6 +70,7 @@ nav ul {
   margin: 0;
   font-family: 'VT323';
   white-space: nowrap;
+
 }
 
 nav{
@@ -75,6 +79,7 @@ nav{
   bakcground-color: #fff;
 }
 
+/* メニュー部分の表示 */
 nav ul li{
   list-style-type: none;
   float: left;
@@ -86,10 +91,54 @@ nav ul li{
   font-size: 1.2em;
   text-align: center;
 }
-
+/* メニューにマウスを乗せた時の動作 */
 nav ul li:hover{
   background-color: #cff;
   color: #006;
+}
+/* メニューの登場アニメーション */
+nav ul a:nth-child(1) li{  
+  -webkit-animation: menushow 0.3s both;
+  -moz-animation: menushow 0.3s both;
+  -o-animation: menushow 0.3s both;
+  -ms-animation: menushow 0.3s both;
+  animation: menushow 0.3s both;
+}
+nav ul a:nth-child(2) li{  
+  -webkit-animation: menushow 0.3s both;
+  -moz-animation: menushow 0.3s both;
+  -o-animation: menushow 0.3s both;
+  -ms-animation: menushow 0.3s both;
+  animation: menushow 0.3s both;
+
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+nav ul a:nth-child(3) li{  
+  -webkit-animation: menushow 0.3s both;
+  -moz-animation: menushow 0.3s both;
+  -o-animation: menushow 0.3s both;
+  -ms-animation: menushow 0.3s both;
+  animation: menushow 0.3s both;
+
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+@-webkit-keyframes menushow{
+  0%{
+    opacity: 0;
+    padding-top: 0px;
+  }
+  100%{
+    opacity: 1;
+    padding-top: 8px;
+  }
 }
 
 nav a{
@@ -111,12 +160,112 @@ article h1{
 article h2{
   font-size: 1.2em;
   padding: 5px 5px 0px 5px;
-  margin-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   font-weight: normal;
-  border-bottom: solid;
+  border-bottom: solid 1px;
   border-bottom-color: #666;
+
+
 }
 
+/* section部分のアニメーション */
+article section:nth-child(1){
+  -webkit-animation: show 1s both;
+  -moz-animation: show 1s both;
+  -o-animation: show 1s both;
+  -ms-animation: show 1s both;
+  animation: show 1s both;
+}
+article section:nth-child(2){
+  -webkit-animation: show 1s both;
+  -moz-animation: show 1s both;
+  -o-animation: show 1s both;
+  -ms-animation: show 1s both;
+  animation: show 1s both;
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+article section:nth-child(3){
+  -webkit-animation: show 1s both;
+  -moz-animation: show 1s both;
+  -o-animation: show 1s both;
+  -ms-animation: show 1s both;
+  animation: show 1s both;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  -ms-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+article section:nth-child(4){
+  -webkit-animation: show 1s both;
+  -moz-animation: show 1s both;
+  -o-animation: show 1s both;
+  -ms-animation: show 1s both;
+  animation: show 1s both;
+  -webkit-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  -o-animation-delay: 0.9s;
+  -ms-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+@-webkit-keyframes show{
+  0%{
+    opacity: 0;
+    padding-left: 60;
+  }
+  100%{
+    opacity: 1;
+    padding-left: 0;
+  }
+}
+@-moz-keyframes show{
+  0%{
+    opacity: 0;
+    padding-left: 60;
+  }
+  100%{
+    opacity: 1;
+    padding-left: 0;
+  }
+}
+@-ms-keyframes show{
+  0%{
+    opacity: 0;
+    padding-left: 60;
+  }
+  100%{
+    opacity: 1;
+    padding-left: 0;
+  }
+}
+@-o-keyframes show{
+  0%{
+    opacity: 0;
+    padding-left: 60;
+  }
+  100%{
+    opacity: 1;
+    padding-left: 0;
+  }
+}
+@keyframes show{
+  0%{
+    opacity: 0;
+    padding-left: 60;
+  }
+  100%{
+    opacity: 1;
+    padding-left: 0;
+  }
+}
+
+/* これは必要なのか */
 article h2 div{
   font-size: 0.8em;
   float: right;
@@ -204,7 +353,7 @@ article section.account .outer{
   /* 背景画像は大きさにあわせて中央に表示 */
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  /* background-size: contain; */ /* containはコンテナのサイズにあわせて拡大 */
 }
 article section.account .inner{
   width: 120;
@@ -275,7 +424,7 @@ article section.account a.facebook .inner:hover{
 /* tumblr */
 article section.account a.tumblr .outer{
   background-image: url(snsimg/tumblr.png);
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(53, 70, 92);
 }
 article section.account a.tumblr .inner{
   background-color: rgb(0, 0, 0, 0.0);
