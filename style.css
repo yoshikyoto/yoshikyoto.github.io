@@ -86,8 +86,8 @@ nav ul li{
   background-color: #000000;
   color: #ddddff;
   margin-left: 1;
-  padding: 8px 10px;
-  width: 72;
+  padding: 8px 2px;
+  width: 90;
   font-size: 1.2em;
   text-align: center;
 }
@@ -129,6 +129,19 @@ nav ul a:nth-child(3) li{
   -o-animation-delay: 0.2s;
   -ms-animation-delay: 0.2s;
   animation-delay: 0.2s;
+}
+nav ul a:nth-child(4) li{  
+  -webkit-animation: menushow 0.3s both;
+  -moz-animation: menushow 0.3s both;
+  -o-animation: menushow 0.3s both;
+  -ms-animation: menushow 0.3s both;
+  animation: menushow 0.3s both;
+
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 @-webkit-keyframes menushow{
   0%{
@@ -461,6 +474,18 @@ article section.account a.github .inner{
 article section.account a.github .inner:hover{
   background-color: rgba(0, 0, 0, 0.8);
   color: rgba(238, 238, 238, 1.0);
+}
+/* --- ここまでがアカウント ----- */
+
+
+/* Programming ページの本紹介の部分 */
+div.book{
+  overflow: hidden;
+}
+/* 本の回り込みを設定 */
+div.book img{
+  float: left;
+  padding-right: 20px;
 }
 
 article section a{
