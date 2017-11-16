@@ -10,10 +10,20 @@ body {
 
 /* General & 'Reset' Stuff */
 
+.menu {
+    float: left;
+    width: 240px;
+    margin: 0 20px;
+    overflow: hidden;
+}
+
+.header {
+    margin: 0 200px;
+}
+
 .container {
   width: 90%;
-  max-width: 600px;
-  margin: 0 auto;
+  margin: 0 2;
 }
 
 section {
@@ -231,7 +241,7 @@ hr {
 
 .btn-github .icon {
   opacity: 0.6;
-  background: url("/test/assets/images/blacktocat.png") 0 0 no-repeat;
+  background: url("/assets/images/blacktocat.png") 0 0 no-repeat;
 }
 
 /* Links
