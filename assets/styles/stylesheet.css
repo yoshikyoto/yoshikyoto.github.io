@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #151515 url("/text/assets/images/bkg.png") 0 0;
+  background: #151515 url("/assets/images/bkg.png") 0 0;
   color: #eaeaea;
   font: 16px;
   line-height: 1.5;
@@ -10,21 +10,10 @@ body {
 
 /* General & 'Reset' Stuff */
 
-.header {
-    margin: 0 200px;
-}
-
-.menu {
-    float: left;
-    width: 240px;
-    margin: 0 20px;
-    overflow: hidden;
-}
-
 .container {
-  float: right;
   width: 90%;
-  margin: 0 2;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 section {
