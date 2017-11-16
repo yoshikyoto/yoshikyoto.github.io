@@ -1,6 +1,5 @@
 ---
 title: jekyllを使いMarkdownで書いてGitHub Pagesで公開する
-category: GitHub Pages
 ---
 
 # Markdownで書かれたページをGitHub Pagesで公開する
