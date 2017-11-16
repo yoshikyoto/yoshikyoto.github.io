@@ -1,6 +1,7 @@
 ---
 title: jekyllを使いMarkdownで書いてGitHub Pagesで公開する
-tags: [GithubPages]
+tags:
+- GithubPages
 ---
 
 # Markdownで書かれたページをGitHub Pagesで公開する
