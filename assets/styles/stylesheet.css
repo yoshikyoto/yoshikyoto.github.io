@@ -10,6 +10,10 @@ body {
 
 /* General & 'Reset' Stuff */
 
+.header {
+    margin: 0 200px;
+}
+
 .menu {
     float: left;
     width: 240px;
@@ -17,11 +21,8 @@ body {
     overflow: hidden;
 }
 
-.header {
-    margin: 0 200px;
-}
-
 .container {
+  float: right;
   width: 90%;
   margin: 0 2;
 }
