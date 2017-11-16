@@ -1,5 +1,6 @@
 ---
 title: jekyllを使いMarkdownで書いてGitHub Pagesで公開する
+category: GitHub Pages
 ---
 
 # Markdownで書かれたページをGitHub Pagesで公開する
@@ -39,19 +40,7 @@ highlighter: rouge
 `default.html` という名前はなんでもよい。
 例えば、 `_layouts/defaut.html` を以下のように記述する。
 
-```
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <title> {{ page.title }} - @yoshiki_utakata</title>
-  </head>
 
-  <body>
-    {{ content }}
-  </body>
-</html>
-```
 
 content の部分に、MarkdownをHTMLに変換したものが入る。
 page.title の部分については後に出て来るページタイトルが表示される。
