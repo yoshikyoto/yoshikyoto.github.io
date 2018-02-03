@@ -28,9 +28,9 @@
       <section id="main_content">
         {{ content }}
       </section>
+      {% for html_page in site.html_pages %}
+      <a href="{{ html_page.url }}">{{ html_page.title }}</a>
+      {% endfor %}
     </div>
-    {% for html_page in site.html_pages %}
-    {{ html_page }}
-    {% endfor %}
   </body>
 </html>
